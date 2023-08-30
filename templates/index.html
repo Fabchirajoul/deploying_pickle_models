@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  
+  <!-- Make it compatible to mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>MUS MODEL</title>
+  
+</head>
+
+<body>
+ 
+ <div>
+  <h3 style="color:Violet;">Jn Description</h3>
+
+
+  <form action="{{ url_for('predict_Jn')}}" method="post">
+    <input type="text" name="Jn Description" placeholder="Enter Jn Description here" />
+    <button type="submit">Jn Submit Button</button>
+
+  </form><br><br>
+
+  <h4 style="color:Violet;">
+    {{ prediction_text_Jn }} </h4>
+ </div>
+
+ <div>
+  <h3 style="color:Violet;">Ja Description</h3>
+
+
+  <form action="{{ url_for('predict_Ja')}}" method="post">
+    <input type="text" name="Ja Description" placeholder="Enter Ja Description here" />
+    <button type="submit">Ja Submit Button</button>
+
+  </form><br><br>
+
+  <h4 style="color:Violet;">
+    {{ prediction_text_Ja }} </h4>
+ </div>
+
+
+</body>
+</html>
