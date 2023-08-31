@@ -60,6 +60,57 @@ def predict_Ja():
 
 # Ja ends here 
 
+# Jr starts here 
+
+@app.route('/predict_Jr', methods=['POST'])
+def predict_Jr():
+
+    int_features = [int(x) for x in request.form.values()]
+    features = [np.array(int_features)]
+
+    prediction_Jr = model_Jr.predict(features)
+
+    output = round(prediction_Ja[0], 2)
+
+    return render_template('index.html', prediction_text_Jr='Based on your input, the Jr value is {}'.format(output))
+
+
+# Jr ends here 
+
+
+# Jw starts here 
+
+@app.route('/predict_Jw', methods=['POST'])
+def predict_Jw():
+
+    int_features = [int(x) for x in request.form.values()]
+    features = [np.array(int_features)]
+
+    prediction_Jw = model_Jw.predict(features)
+
+    output = round(prediction_Jw[0], 2)
+
+    return render_template('index.html', prediction_text_Jw='Based on your input, the Jw value is {}'.format(output))
+
+
+# Jw ends here 
+
+# RQD starts here
+ 
+@app.route('/predict_rqd', methods=['POST'])
+def predicted_rqd():
+
+    int_features = [int(x) for x in request.form.values()]
+    features = [np.array(int_features)]
+
+    prediction_rqd = model_rqd.predict(features)
+
+    output = round(prediction_rqd[0], 2)
+
+    return render_template('index.html', prediction_text_rqd='Based on your input, the Jw value is {}'.format(output)) 
+
+# reqd ends here 
+
 
 
 

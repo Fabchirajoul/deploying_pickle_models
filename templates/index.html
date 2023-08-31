@@ -12,7 +12,7 @@
 
 <body>
  
- <div>
+ <div style="text-align: center;">
   <h3 style="color:Violet;">Jn Description</h3>
 
 
@@ -26,7 +26,7 @@
     {{ prediction_text_Jn }} </h4>
  </div>
 
- <div>
+ <div style="text-align: center;">
   <h3 style="color:Violet;">Ja Description</h3>
 
 
@@ -37,7 +37,53 @@
   </form><br><br>
 
   <h4 style="color:Violet;">
-    {{ prediction_text_Ja }} </h4>
+    {{ prediction_text_Jr }} </h4>
+ </div>
+
+ <div style="text-align: center;">
+  <h3 style="color:Violet;">Jr Description</h3>
+
+
+  <form action="{{ url_for('predict_Jr')}}" method="post">
+    <input type="text" name="Jr Description" placeholder="Enter Jr Description here" />
+    <button type="submit">Jr Submit Button</button>
+
+  </form><br><br>
+
+  <h4 style="color:Violet;">
+    {{ prediction_text_Jr }} </h4>
+ </div>
+
+ <div style="text-align: center;">
+  <h3 style="color:Violet;">Jw Description</h3>
+
+
+  <form action="{{ url_for('predict_Jw')}}" method="post">
+    <input type="text" name="Jw Description" placeholder="Enter Jw Description here" />
+    <button type="submit">Jw Submit Button</button>
+
+  </form><br><br>
+
+  <h4 style="color:Violet;">
+    {{ prediction_text_Jw }} </h4>
+ </div>
+
+ <div style="text-align: center;">
+  <h3 style="color:Violet;">RQD</h3>
+
+
+  <form action="{{ url_for('predicted_rqd')}}" method="post">
+    <input type="number" name="Depth From (m)" placeholder="Enter Jw Description here" />
+    <input type="number" name="Depth to (m)" placeholder="Enter Jw Description here" />
+    <input type="number" name="True Thickness (m)" placeholder="Enter Jw Description here" />
+    <input type="number" name="Weathering" placeholder="Enter Jw Description here" />
+    <input type="number" name="Hardness" placeholder="Enter Jw Description here" />
+    <button type="submit">RQD Submit Button</button>
+
+  </form><br><br>
+
+  <h4 style="color:Violet;">
+    {{ prediction_text_rqd }} </h4>
  </div>
 
 

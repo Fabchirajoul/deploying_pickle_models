@@ -1,0 +1,14 @@
+GET http://localhost:3008/api/Jn_model
+
+
+###
+GET http://localhost:3008/api/Ja_model
+
+
+
+###
+GET http://localhost:3008/api/rmr_model
+
+###
+GET http://localhost:3008/api/mus_model
+
