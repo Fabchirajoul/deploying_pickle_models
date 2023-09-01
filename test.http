@@ -12,3 +12,28 @@ GET http://localhost:3008/api/rmr_model
 ###
 GET http://localhost:3008/api/mus_model
 
+
+###
+GET http://localhost:3008/api/Jw_model
+
+###
+GET http://localhost:3008/api/q_model
+
+###
+GET http://localhost:3008/api/srf_model
+
+###
+GET http://localhost:3008/api/esr_model
+
+###
+GET http://localhost:3008/api/ucsvsr_model
+
+###
+GET http://localhost:3008/api/rqd_model
+
+###
+GET http://localhost:3008/api/Ja_model
+
+###
+GET http://localhost:3008/api/rmr_model
+
